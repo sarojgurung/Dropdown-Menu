@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1 Final Navigation Header</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="myNavigation">
+        <ul class="myNav" id="myNav">
+            <li><a href="#" class="myNav_links">Home</a></li>
+            <li><a href="#" class="myNav_links">Contact</a></li>
+            <li id="dropdown_menu">
+                <a href="#" class="myNav_links" onClick="myFunction()">Dropdown</a>
+                <div class="dropdown" id="dropdown">
+                    <a href="#" class="dropdown_links">Item</a>
+                    <a href="#" class="dropdown_links">Item</a>
+                    <a href="#" class="dropdown_links">Item</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+<script>
+    function myFunction(){
+        document.getElementById("dropdown").classList.toggle("show");
+    }
+</script>
+</html>
